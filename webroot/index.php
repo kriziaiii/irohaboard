@@ -81,10 +81,10 @@ if(!file_exists(ROOT.DS.APP_DIR))
  */
 if (!defined('CAKE_CORE_INCLUDE_PATH')) {
 	// cake ディレクトリが webroot と同じ階層に存在する場合
-	//define('CAKE_CORE_INCLUDE_PATH', dirname(dirname(__FILE__)).DS.'cake'.DS.'lib');
+	define('CAKE_CORE_INCLUDE_PATH', dirname(dirname(__FILE__)).DS.'cake'.DS.'lib');
 	
 	// cake ディレクトリが webroot の1階層上に存在する場合
-	define('CAKE_CORE_INCLUDE_PATH', dirname(dirname(dirname(__FILE__))).DS.'cake'.DS.'lib');
+	//define('CAKE_CORE_INCLUDE_PATH', dirname(dirname(dirname(__FILE__))).DS.'cake'.DS.'lib');
 	
 	// cake ディレクトリが webroot の2階層上に存在する場合
 	//define('CAKE_CORE_INCLUDE_PATH', dirname(dirname(dirname(dirname(__FILE__)))).DS.'cake'.DS.'lib');
